@@ -1,0 +1,178 @@
+body{
+}
+span{
+    font-family: "GibsonRegular", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+    -webkit-font-smoothing: antialiased;
+    display: block;
+    cursor: pointer;
+    color: #000000;
+    text-transform: uppercase;
+    position: absolute;
+    padding: 20px 38px;
+
+}
+a{
+    text-decoration: none;
+    font-size: 0pt;
+    display: block;
+    height: 52px;
+}
+h1{
+    color: #ffffff;
+    text-align: center;
+}
+h5{
+    text-transform: uppercase;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+li{
+    display: inline-block;
+}
+.anterior_sup{
+    bottom: 300px;
+    left: 0;
+}
+.siguiente_sup{
+    bottom: 300px;
+    right: 0;
+}
+.anterior_inf{
+    bottom: 0;
+    left: 0;
+}
+.siguiente_inf{
+    bottom: 0;
+    right: 0;
+}
+#contenedor_principal{
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+}
+#encabezado{
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 45px;
+    position: fixed;
+    background: #000000;
+    z-index: 10;
+}
+
+#menu{
+    padding: 0;
+    margin: 0;
+}
+#menu li{
+    display: inline-block;
+    color: #868686;
+    padding: 15px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+}
+#menu li:hover{
+    color: #D8D8D8;
+}
+#contenedor_portafolio{
+    width: 100%;
+    padding: 45px 0 0 0;
+}
+.fila{
+    height: 600px;
+    position: relative;
+}
+.fila div.portafolio img{
+    height: 600px;
+}
+.cubre{
+    position: absolute;
+    width: 0;
+    height: 600px;
+    z-index: 2;
+    -webkit-transition: width .400s;
+}
+.cubre_show{
+    position: absolute;
+    width: 100%;
+    height: 600px;
+    z-index: 2;
+}
+#f1 div.cubre{
+    background-color: rgba(0,255,0,0.2);
+}
+#f2 div.cubre{
+    background-color: rgba(255,0,0,0.2);
+}
+#f3 div.cubre{
+    background-color: rgba(100,255,255,0.2);
+}
+.portafolio{
+    position: relative;
+    overflow: hidden;
+    width: 75%;
+    height: 600px;
+    float: left;
+    z-index: 1;
+}
+.portafolio img{
+    width: 100%;
+    position: absolute;
+}
+.texto_portafolio{
+    position: absolute;
+    width: 300px;
+    height: 373px;
+    z-index: 3;
+    background: #042634;
+}
+#texto_1{
+    top: 0;
+    right: 0;
+}
+#texto_2{
+    background: #04B4AE;
+}
+#texto_3{
+    background: #DF0101;
+}
+.carrusel{
+    position: relative;
+    float: left;
+    width: 25%;
+    height: 600px;
+    overflow: hidden;
+}
+.carrusel ul{
+    width: 1000%;
+    margin-left: -100%;
+    text-align: center;
+}
+.carrusel_inf{
+    margin-top: 300px;
+}
+.carrusel ul li{
+    width: 10%;
+    float: left;
+}
+.carrusel ul li img{
+    width: 100%;
+    height: 250px;
+}
+#carrusel_2{
+    background: #BDBDBD;
+}
+#carrusel_3{
+    background: #E6E6E6;
+}
+#pie{
+    height: 52px;
+    background: #FE642E;
+}
