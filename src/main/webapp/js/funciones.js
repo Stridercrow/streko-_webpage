@@ -90,4 +90,6 @@ $(document).ready(function(){
     $("#f3").hover(function(){
         $("#f3 div.cubre").toggleClass("cubre_show");
     });
+
+    $("a[rel=terumo]").fancybox();
 });

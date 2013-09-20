@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    font-family: Arial Narrow, sans-serif;
+}
+body{
+    background-image: url("../img/debut_dark.png");
+    position: relative;
+    top:45px;
+    padding: 0;    
+}
+.logo{
+    background: url("../img/streko_logo.png") no-repeat ;
+    width: 370px;
+    height: 45px;
+    float:left;
+}
+.logo a{
+    display: none;
+}
+button{
+    background: #000;
+    color: #fff;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+li{
+    display: inline-block;
+}
+#encabezado{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 45px;
+    background: #000000;
+    z-index: 10;
+}
+#menu a{
+    text-decoration: none;
+    display: block;
+    color: #868686;
+    padding: 15px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+}
+#menu a:hover{
+    color: #D8D8D8;
+}
+#contacto{
+    width: 480px;
+    background: rgba(0,0,0, 0.5);
+    position: absolute;
+    color: #E6E6E6;
+    font-family: Arial Narrow, sans-serif;
+    -webkit-opacity: 0;
+    -webkit-transition: all 1s ease;
+}
+#contacto label, input{
+    width: 200px;
+}
+#campos_entrada{    
+    float: left;
+    padding-right: 3px;
+    text-align: right;
+}
+#campos_entrada input{
+    width: 50%;
+    -webkit-border-radius: 4px;
+}
+#comentario{
+    float: left;    
+    -webkit-border-radius: 4px;
+    width: 248px;
+    resize: none;
+}
+#contactanos:hover form{
+    -webkit-opacity: 1;
+    -webkit-transition: all 1s ease;
+}
+#contenedor_acerca{
+    position: relative;
+}
+.fila_izq{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background: #848484;
+    text-align: center;
+    -webkit-animation: 2s;
+    -webkit-animation-name: aparece_fila_izq;
+}
+@-webkit-keyframes aparece_fila_izq{
+    0%{
+        left: -100%;
+    }
+    100%{
+         left: 0;
+    }
+}
+.fila_izq img{
+    width: 20%;
+    float: left;    
+}
+.fila_izq div{
+    position: relative;
+    text-align: center;
+}
+.fila_der{
+    position: relative;
+    width: 100%;
+    overflow: hidden;    ;
+    background: #6E6E6E;
+    -webkit-animation: 2s;
+    -webkit-animation-name: aparece_fila_der;
+}
+@-webkit-keyframes aparece_fila_der{
+    0%{
+        bottom: -400px;
+    }
+    100%{
+        bottom: 0
+    }
+}
+.fila_der img{
+    width: 25%;
+    float: right;
+}
+.fila_der div{
+    position: relative;
+    text-align: center;
+}
+.texto{
+    color: #E6E6E6;
+    padding-top: 5%;
+}
+.texto h2{
+    padding-top: 2%;
+}
+#pie{
+    height: 52px;
+    background: #000000;
+}
+@media screen and (max-width: 480px){
+    .texto{
+        font-size: 10px;
+    }    
+}

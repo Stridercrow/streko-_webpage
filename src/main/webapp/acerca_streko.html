@@ -1,9 +1,58 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title></title>
+    <title>Acerca de Streko</title>
+    <meta charset="utf-8">
+    <script src="js/libs/jquery-1.9.0.min.js"></script>
+    <script type="text/javascript" src="js/acerca.js"></script>
+    <link type="text/css" rel="stylesheet" href="css/acerca.css">
+    <style>
+
+    </style>
 </head>
 <body>
+    <div id="encabezado">
+        <div class="logo">
+            <a href="http://sergiobaezf.wix.com/strekoarquitectos" target="_blank">STREKO</a>
+        </div>
+        <div id="navegacion">
+            <ul id="menu">
+                <li><a href="Streko-Portafolio.html">Principal</a></li>
+                <li><a href="acerca_streko.html">Acerca de Streko</a></li>
+                <li id="contactanos">
+                    <a href="">Contactanos</a>
+                    <form id="contacto" action="envia">
+                        <div id="campos_entrada">
+                            <label>Nombre:</label><input id="nombre" type="text" name="nombre" value=""><br>
+                            <label>Email:</label><input id="email" type="text" name="nombre" value=""><br>
+                            <label>Asunto:</label><input id="asunto" type="text" name="asunto" value="">
+                        </div>                        
+                        <textarea id="comentario" placeholder="ESCRIBENOS UN COMENTARIO"></textarea>                        
+                        <button>Enviar</button>
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="contenedor_acerca">
+        <div class="fila_izq">
+            <img src="img/acerca_1.png">
+            <div class="texto">
+                <h1> Despacho </h1>
+                <h2> Ayudando a materializar los sueños, hacemos tu proyecto realidad</h2>
+            </div>
+        </div>
+        <div class="fila_der">
+            <img src="img/acerca_2.png">
+            <div class="texto">
+                <h1>Filosof&iacute;a </h1>
+                <h2>Trabajamos de la mano con nuestros clientes, atenci&oacute;n a los detalles,</h2>
+                <h2>buscando la mejor calidad en nuestro trabajo</h2>
+            </div>
+        </div>
+    </div>
+    <div id="pie">
 
+    </div>        
 </body>
 </html>

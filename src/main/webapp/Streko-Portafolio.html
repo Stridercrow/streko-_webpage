@@ -5,33 +5,21 @@
     <title>Streko Webpage</title>
     <script src="js/libs/jquery-1.9.0.min.js"></script>
     <script type="text/javascript" src="js/funciones.js"></script>
-    <script type="text/javascript" src="js/libs/lightbox-2.6.min.js"></script>
+    <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
     <link href="css/main.css" type="text/css" rel="stylesheet"/>
-    <link href="css/lightbox.css" type="text/css" rel="stylesheet"/>
-    <style>
-        .logo{
-            background: url("img/streko_logo.jpg") no-repeat ;
-            width: 370px;
-            height: 45px;
-            float:left;
-        }
-        #carrusel_1, #carrusel_2, #carrusel_3{
-            background-image: url('img/triangular.png');
-        }
-    </style>
+    <link href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" rel="stylesheet" media="screen"/>
 </head>
 <body>
     <div id="contenedor_principal">
         <div id="encabezado">
-            <div class="logo">
-                <a href="http://sergiobaezf.wix.com/strekoarquitectos" target="_blank">STREKO</a>
-            </div>
-            <div>
+            <div id="encabezado">
+                <div class="logo">
+                    <a href="http://sergiobaezf.wix.com/strekoarquitectos" target="_blank">STREKO</a>
+                </div>
                 <ul id="menu">
-                    <li>Principal</li>
-                    <li>Trabajo</li>
-                    <li>Acerca de Streko</li>
-                    <li>Contactanos</li>
+                    <li><a href="Streko-Portafolio.html">Principal</a></li>
+                    <li><a href="acerca_streko.html">Acerca de Streko</a></li>
+                    <li><a href="">Contactanos</a></li>
                 </ul>
             </div>
         </div>
@@ -46,9 +34,9 @@
                 </div>
                 <div class="carrusel" id="carrusel_1">
                     <ul id="lista_1_sup">
-                        <li><a href="img/terumo/carrusel/1.jpg" data-lightbox="terumo"><img src="img/terumo/carrusel/1.jpg"></a></li>
-                        <li><a href="img/terumo/carrusel/2.jpg" data-lightbox="terumo"><img src="img/terumo/carrusel/2.jpg"></a></li>
-                        <li><a href="img/terumo/carrusel/3.jpg" data-lightbox="terumo"><img src="img/terumo/carrusel/3.jpg"></a></li>
+                        <li><a href="img/terumo/carrusel/1.jpg" rel="terumo"><img src="img/terumo/carrusel/1.jpg"></a></li>
+                        <li><a href="img/terumo/carrusel/2.jpg" rel="terumo"><img src="img/terumo/carrusel/2.jpg"></a></li>
+                        <li><a href="img/terumo/carrusel/3.jpg" rel="terumo"><img src="img/terumo/carrusel/3.jpg"></a></li>
                     </ul>
                     <span class="anterior_sup">anterior</span>
                     <span class="siguiente_sup">siguiente</span>
