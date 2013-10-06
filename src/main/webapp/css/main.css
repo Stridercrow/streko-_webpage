@@ -5,14 +5,17 @@ span{
     font-family: "GibsonRegular", Helvetica, Arial, sans-serif;
     font-size: 16px;
     line-height: 16px;
-    -webkit-font-smoothing: antialiased;
     display: block;
     cursor: pointer;
     color: #000000;
     text-transform: uppercase;
     position: absolute;
     padding: 20px 38px;
-
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    -ms-font-smoothing: antialiased;
+    font-smoothing: antialiased;
 }
 .logo a{
     font-size: 0;
@@ -40,9 +43,6 @@ li{
     width: 370px;
     height: 45px;
     float:left;
-}
-#carrusel_1, #carrusel_2, #carrusel_3{
-    background-image: url('../img/triangular.png');
 }
 .anterior_sup{
     bottom: 300px;
@@ -95,33 +95,96 @@ li{
     padding: 45px 0 0 0;
 }
 .fila{
-    height: 600px;
+    min-height: 600px;
     position: relative;
 }
 .fila div.portafolio img{
     height: 600px;
 }
-.cubre{
+#f1 .cubre{
+    background-color: rgba(0,255,0,0.2);
     position: absolute;
     width: 0;
     height: 600px;
     z-index: 2;
     -webkit-transition: width .400s;
+    -moz-transition: width .400s;
+    -o-transition: width .400s;
+    -ms-transition: width .400s;
+    transition: width .400s;
 }
-.cubre_show{
+#f2 .cubre{
+    background-color: rgba(255,0,0,0.2);
     position: absolute;
-    width: 100%;
+    width: 0;
     height: 600px;
     z-index: 2;
+    -webkit-transition: width .400s;
+    -moz-transition: width .400s;
+    -o-transition: width .400s;
+    -ms-transition: width .400s;
+    transition: width .400s;
 }
-#f1 div.cubre{
-    background-color: rgba(0,255,0,0.2);
-}
-#f2 div.cubre{
-    background-color: rgba(255,0,0,0.2);
-}
-#f3 div.cubre{
+#f3 .cubre{
     background-color: rgba(100,255,255,0.2);
+    position: absolute;
+    width: 0;
+    height: 600px;
+    z-index: 2;
+    -webkit-transition: width .400s;
+    -moz-transition: width .400s;
+    -o-transition: width .400s;
+    -ms-transition: width .400s;
+    transition: width .400s;
+}
+#f4 .cubre{
+    background-color: rgba(0,0,255,0.2);
+    position: absolute;
+    width: 0;
+    height: 600px;
+    z-index: 2;
+    -webkit-transition: width .400s;
+    -moz-transition: width .400s;
+    -o-transition: width .400s;
+    -ms-transition: width .400s;
+    transition: width .400s;
+}
+#f5 .cubre{
+    background-color: rgba(255,255,255,0.2);
+    position: absolute;
+    width: 0;
+    height: 600px;
+    z-index: 2;
+    -webkit-transition: width .400s;
+    -moz-transition: width .400s;
+    -o-transition: width .400s;
+    -ms-transition: width .400s;
+    transition: width .400s;
+}
+#f1:hover div.cubre{
+    background-color: rgba(0,255,0,0.2);
+    width: 100%;
+    height: 600px;   
+}
+#f2:hover div.cubre{
+    background-color: rgba(255,0,0,0.2);
+    width: 100%;
+    height: 600px;   
+}
+#f3:hover div.cubre{
+    background-color: rgba(100,255,255,0.2);
+    width: 100%;
+    height: 600px;   
+}
+#f4:hover div.cubre{
+    background-color: rgba(0,0,255,0.2);
+    width: 100%;
+    height: 600px;   
+}
+#f5:hover div.cubre{
+    background-color: rgba(255,255,255,0.2);
+    width: 100%;
+    height: 600px;   
 }
 .portafolio{
     position: relative;
@@ -137,12 +200,12 @@ li{
 }
 .texto_portafolio{
     position: absolute;
-    width: 30%;
+    width: 304px;
     height: 373px;
     z-index: 3;
     background: #042634;
 }
-#texto_1{
+#texto_1,#texto_4{
     top: 0;
     right: 0;
 }
@@ -152,7 +215,14 @@ li{
 #texto_3{
     background: #DF0101;
 }
+#texto_4{
+    background: #642EFE;
+}
+#texto_5{
+    background: #FF4000;
+}
 .carrusel{
+    background-image: url('../img/triangular.png');
     position: relative;
     float: left;
     width: 25%;
@@ -162,7 +232,7 @@ li{
 .carrusel ul{
     width: 1000%;
     margin-left: -100%;
-    text-align: center;
+    text-align: center;    
 }
 .carrusel_inf{
     margin-top: 300px;
@@ -174,12 +244,6 @@ li{
 .carrusel ul li img{
     width: 100%;
     height: 250px;
-}
-#carrusel_2{
-    background: #BDBDBD;
-}
-#carrusel_3{
-    background: #E6E6E6;
 }
 #pie{
     height: 52px;

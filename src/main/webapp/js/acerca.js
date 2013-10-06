@@ -15,11 +15,12 @@ $(document).ready(function(){
 	});
 	$("button").click(function(){
 		if(($("#nombre").val() == "") || ($("#email").val() == "") || ($("#asunto").val() == "") || ($("#textocomentario").val() == "")){
-			$("#nombre").ṕlaceholder("Ingresa tu nombre");
+			alert("Llena todos los campos por favor!");			
 			return false;
 		}
 		if(!esEmailValido($("#email").val())){
 			$("#email").css("border", "2px solid red");
+			alert("Ingresa un correo electrónico válido por favor!");
 			return false;
 		}					
 	});

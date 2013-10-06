@@ -8,6 +8,9 @@ body{
     top:45px;
     padding: 0;    
 }
+button{
+    display: block;
+}
 .logo{
     background: url("../img/streko_logo.png") no-repeat ;
     width: 370px;
@@ -50,14 +53,12 @@ li{
 #menu a:hover{
     color: #D8D8D8;
 }
-#contacto{
-    width: 480px;
+#contacto{    
     background: rgba(0,0,0, 0.5);
     position: absolute;
     color: #E6E6E6;
-    font-family: Arial Narrow, sans-serif;
-    -webkit-opacity: 0;
-    -webkit-transition: all 1s ease;
+    font-family: Arial Narrow, sans-serif;    
+    opacity: 0;
 }
 #contacto label, input{
     width: 200px;
@@ -71,15 +72,20 @@ li{
     width: 50%;
     -webkit-border-radius: 4px;
 }
-#comentario{
-    float: left;    
+#comentario{        
     -webkit-border-radius: 4px;
     width: 248px;
     resize: none;
 }
-#contactanos:hover form{
-    -webkit-opacity: 1;
+#contactanos:hover form{    
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
     -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
 }
 #contenedor_acerca{
     position: relative;
@@ -88,12 +94,28 @@ li{
     position: relative;
     width: 100%;
     overflow: hidden;
-    background: #848484;
+    background: #819FF7;
     text-align: center;
     -webkit-animation: 2s;
+    -moz-animation: 2s;
+    -ms-animation: 2s;
+    -o-animation: 2s;
+    animation: 2s;
     -webkit-animation-name: aparece_fila_izq;
+    -moz-animation-name: aparece_fila_izq;
+    -ms-animation-name: aparece_fila_izq;
+    -o-animation-name: aparece_fila_izq;
+    animation-name: aparece_fila_izq;
 }
 @-webkit-keyframes aparece_fila_izq{
+    0%{
+        left: -100%;
+    }
+    100%{
+         left: 0;
+    }
+}
+@-moz-keyframes aparece_fila_izq{
     0%{
         left: -100%;
     }
@@ -113,7 +135,7 @@ li{
     position: relative;
     width: 100%;
     overflow: hidden;    ;
-    background: #6E6E6E;
+    background: #5882FA;
     -webkit-animation: 2s;
     -webkit-animation-name: aparece_fila_der;
 }
